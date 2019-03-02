@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+    .vertical-line{
+        border-left: 1px solid #FBABAA;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        z-index: 0;
+    }
+
+    .r-n-g {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .on-line {
+        z-index: 1;
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    .container-fluid {
+        height: 100%;
+        overflow-y: hidden; /* don't show content that exceeds my height */
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .row {
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    .ogilvy-one {
+        width: 300px;
+        height: 82px;
+        overflow: hidden;
+        margin-top:43px;
+    }
+
+    .img-resp {
+        width: 100%;
+        height: 428px;
+        overflow: hidden;
+    }
+
+    .ogilvy {
+        height: 163px;
+    }
+
+    .index-2 {
+        z-index: 2;
+        top: 10px;
+        margin-top: -425px;
+        color: white;
+    }
+
+    .big-data {
+        font-size: 110px;
+        font-weight: bold;
+        letter-spacing: 20px;
+    }
+
+    .customer {
+        font-size: 40px;
+        letter-spacing: 3px;
+        margin-top: -15px
+    }
+
+    .btn-red {
+        background-color: #F7505A;
+        color: white;
+    }
+
+    .watch-a-day > .btn {
+        margin-top: 30px;
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        line-height: 2;
+        border-radius: 0.3rem
+    }
+
+    .share {
+        margin-top: 30px;
+        
+    }
+
+    .big-data-main {
+        margin-top:-200px;
+    }
+
+    .icon i{
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+
+    #loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #ffffff;
+        z-index: 1000;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out;
+    }
+    
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper {
+        display: none;
+    }
+    .no-js h1 {
+        color: #222222;
+    }
+
+
+    .lds-ripple {
+        /* display: inline-block;
+        position: relative; */
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 80px;
+        height: 80px;
+        z-index: 1001;
+    }
+
+    .lds-ripple div {
+        position: absolute;
+        border: 4px solid #DC3741;
+        opacity: 1;
+        border-radius: 50%;
+        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+
+    .lds-ripple div:nth-child(2) {
+        animation-delay: -0.5s;
+    }
+
+    @keyframes lds-ripple {
+        0% {
+            top: 36px;
+            left: 36px;
+            width: 0;
+            height: 0;
+            opacity: 1;
+        }
+        100% {
+            top: 0px;
+            left: 0px;
+            width: 72px;
+            height: 72px;
+            opacity: 0;
+        }
+    }
+
+    .loaded .lds-ripple {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;  
+                transition: all 0.3s ease-out;
+    }
+
+    </style>
+
+
+    <title>Big Data</title>
+</head>
+<body>
+    <div id="loader-wrapper">
+        
+        <div class="lds-ripple"><div></div><div></div></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+        
+    </div>
+    
+
+    <div class="container-fluid">
+        
+            
+            <div class="vertical-line">
+
+            </div>
+            <div class="row r-n-g on-line">
+                <div class="col-md-12 text-center ogilvy" >
+                    <img src="img/OgilvyOne.JPG" alt="OgilvyOne" class="ogilvy-one">
+                </div>
+                <div class="col-md-12 big-data-main">
+                    <img src="img/bg-video.jpg" alt="girl" class="img-resp">
+                    <div class="text-center index-2">
+                        <div class="big-data">
+                            BIG DATA
+                        </div >
+                        <div class="customer">
+                            for smarter customer experiences
+                        </div>
+                        
+                        <div class="btn-group watch-a-day " role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-red">WATCH A DAY IN THE LIFE OF BIG DATA</button>
+                            <button type="button" class="btn btn-red"><i class="fas fa-caret-right"></i></button>
+                        </div>
+                        <div class="text-center share">
+                            <div>share</div>
+                            <div class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 4000);
+
+    });
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
