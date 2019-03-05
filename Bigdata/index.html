@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Srisakdi" rel="stylesheet">
     <style>
     .vertical-line{
         border-left: 1px solid #FBABAA;
@@ -47,6 +47,89 @@
         overflow-y: hidden;
     }
 
+    
+
+    @media only screen and (max-width: 1026px) and (min-width: 648px) {
+        .ogilvy-one {
+            width: 225px !important;
+            height: 62px !important;
+            overflow: hidden;
+            margin-top:20px !important;
+        }
+
+        .img-resp {
+            width: 1535px !important;
+
+            height: 558px !important;
+            overflow: hidden;
+        }
+
+        .big-data-main {
+            margin-top:-265px !important;
+        }
+
+        .big-data {
+            font-size: 85px !important;
+            letter-spacing: 15px !important;
+        }
+
+        .customer {
+            font-size: 35px !important;
+            letter-spacing: 0px !important;
+            margin-top: 0px !important;
+            font-family: 'Srisakdi', cursive;
+        }
+
+        .index-2 {
+            z-index: 2;
+            top: 10px;
+            margin-top: -450px !important;
+            color: white;
+        }
+
+        
+    }
+
+    @media only screen and (max-width: 647px){
+        .ogilvy-one {
+            width: 149px !important;
+            height: 41px !important;
+            overflow: hidden;
+            margin-top:20px !important;
+        }
+
+        .img-resp {
+            width: 1535px !important;
+            height: 578px !important;
+            overflow: hidden;
+        }
+
+        .big-data-main {
+            margin-top:-354px !important;
+        }
+
+        .big-data {
+            font-size: 49px !important;
+            letter-spacing: 7px !important;
+        }
+
+        .customer {
+            font-size: 19px !important;
+            letter-spacing: 0px !important;
+            margin-top: 0px !important;
+        }
+
+        .index-2 {
+            z-index: 2;
+            top: 10px;
+            margin-top: -450px !important;
+            color: white;
+        }
+
+        
+
+    }
+
     .ogilvy-one {
         width: 300px;
         height: 82px;
@@ -56,7 +139,7 @@
 
     .img-resp {
         width: 100%;
-        height: 428px;
+        height: 425px;
         overflow: hidden;
     }
 
@@ -73,14 +156,16 @@
 
     .big-data {
         font-size: 110px;
-        font-weight: bold;
+        
         letter-spacing: 20px;
+        font-family: 'Pacifico', cursive;
     }
 
     .customer {
         font-size: 40px;
         letter-spacing: 3px;
-        margin-top: -15px
+        margin-top: 8px;
+        font-family: 'Srisakdi', cursive;
     }
 
     .btn-red {
@@ -88,13 +173,8 @@
         color: white;
     }
 
-    .watch-a-day > .btn {
-        margin-top: 30px;
-        padding: 1rem 3rem;
-        font-size: 1rem;
-        letter-spacing: 4px;
-        line-height: 2;
-        border-radius: 0.3rem
+    .login-signup {
+        margin-top:20px;
     }
 
     .share {
@@ -103,14 +183,18 @@
     }
 
     .big-data-main {
-        margin-top:-200px;
+        margin-top:-196px;
     }
 
     .icon i{
         padding-left: 7px;
         padding-right: 7px;
+        
     }
 
+    .icon {
+        margin-top: 10px;
+    }
 
     #loader-wrapper {
         position: fixed;
@@ -228,19 +312,21 @@
                 transition: all 0.3s ease-out;
     }
 
+
+
     </style>
 
 
     <title>Big Data</title>
 </head>
 <body>
-    <div id="loader-wrapper">
+    <!-- <div id="loader-wrapper">
         
         <div class="lds-ripple"><div></div><div></div></div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
         
-    </div>
+    </div> -->
     
 
     <div class="container-fluid">
@@ -255,25 +341,25 @@
                 </div>
                 <div class="col-md-12 big-data-main">
                     <img src="img/bg-video.jpg" alt="girl" class="img-resp">
-                    <div class="text-center index-2">
+                    <div class="text-center index-2 " >
                         <div class="big-data">
-                            BIG DATA
+                            Lognam
                         </div >
                         <div class="customer">
-                            for smarter customer experiences
+                            The matching the readings
                         </div>
                         
-                        <div class="btn-group watch-a-day " role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-red">WATCH A DAY IN THE LIFE OF BIG DATA</button>
-                            <button type="button" class="btn btn-red"><i class="fas fa-caret-right"></i></button>
+                        <div class="login-signup">
+                            <a class="btn btn-red" href="signup.html">Sign up</a>
+                            <a class="btn btn-red" href="login.html">Login</a>
                         </div>
-                        <div class="text-center share">
+                        <div class=" share">
                             <div>share</div>
                             <div class="icon">
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-linkedin-in"></i>
-                                <i class="fab fa-google-plus-g"></i>
+                                <i class="fab fa-facebook-f" id="icon-1"></i>
+                                <i class="fab fa-twitter" id="icon-2"></i>
+                                <i class="fab fa-linkedin-in" id="icon-3"></i>
+                                <i class="fab fa-google-plus-g" id="icon-4"></i>
                             </div>
                         </div>    
                     </div>
@@ -284,12 +370,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>
-    $(document).ready(function() {
+    // $(document).ready(function() {
  
-    setTimeout(function(){
-        $('body').addClass('loaded');
-    }, 4000);
+    // setTimeout(function(){
+    //     $('body').addClass('loaded');
+    // }, 4000);
 
+    // });
+
+    $(window).resize(function(){
+ 
+        var width = $(window).width();
+
+        console.log(width);
     });
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
