@@ -1,0 +1,126 @@
+*{margin: 0; padding: 0; }
+
+    html, body {
+        height: 100%;
+    }
+
+    .container-fluid {
+        height: 100%;
+        overflow-y: hidden; /* don't show content that exceeds my height */
+        padding-left: 0px;
+        /* padding-right: 0px; */
+    }
+
+    .row {
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    .main-left>img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0px;
+        
+    }
+
+    /* .main-left>img::after {
+        background: linear-gradient(to right, rgba(57,194,218,0),rgba(57,194,218,1) 35%,rgba(57,194,218,0));
+    } */
+
+    /* .main-left {
+        position: fixed;
+        bottom: 0;
+    } */
+
+    .main-right {
+
+    }
+
+    .r-n-g {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .lognam {
+        font-family: 'Italiana', serif;
+        color: #FB5758;
+        position: relative;
+        font-size: 130px;
+        top: 10%;
+
+    }
+
+    .you-care {
+        font-family: 'Montserrat', sans-serif;
+        color: #FB5758;
+        position: relative;
+        top: 4%;
+        text-align: initial;
+        padding-left: 45%;
+        font-size: 25px;
+    }
+
+    .together {
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        top: 10%;
+        font-size: 20px;
+    }
+
+    .together>button {
+        background-color: white;
+        font-weight: bold;
+        border: none;
+        padding-left: 2px;
+        padding-right: 2px;
+        
+    }
+
+    .together>button>a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .sign {
+        position: relative;
+        top: 30%;
+        height: auto;
+    }
+
+    .sign>div>button{
+        background-color: white;
+        border: 1.5px solid  #FB5758;
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+
+    .sign>div>button>a{
+        text-decoration: none;
+        color:#FB5758;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    .about-contact {
+        position: relative;
+        top: 35%;
+        font-family: 'Lobster', cursive;
+        font-size: 18px;
+    }
+
+    .about {
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .about-contact>div>a {
+        text-decoration: none;
+        color: black;
+    }
