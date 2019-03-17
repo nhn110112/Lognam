@@ -21,7 +21,6 @@
         height: auto;
         position: absolute;
         bottom: 0px;
-        
     }
 
     /* .main-left>img::after {
@@ -51,26 +50,25 @@
         font-family: 'Italiana', serif;
         color: #FB5758;
         position: relative;
-        font-size: 130px;
-        top: 10%;
-
+        font-size: 10vw;
+        top: 9vh;
     }
 
     .you-care {
         font-family: 'Montserrat', sans-serif;
         color: #FB5758;
         position: relative;
-        top: 4%;
+        top: 3vh;
         text-align: initial;
         padding-left: 45%;
-        font-size: 25px;
+        font-size: 1.9vw;
     }
 
     .together {
         font-family: 'Montserrat', sans-serif;
         position: relative;
-        top: 10%;
-        font-size: 20px;
+        top: 11vh;
+        font-size: 1.9vw;
     }
 
     .together>button {
@@ -89,7 +87,7 @@
 
     .sign {
         position: relative;
-        top: 30%;
+        top: 30vh;
         height: auto;
     }
 
@@ -110,9 +108,9 @@
 
     .about-contact {
         position: relative;
-        top: 35%;
+        top: 34vh;
         font-family: 'Lobster', cursive;
-        font-size: 18px;
+        font-size: 2vw;
     }
 
     .about {
@@ -123,4 +121,121 @@
     .about-contact>div>a {
         text-decoration: none;
         color: black;
+    }
+
+    @media only screen and (max-width: 1200px) and (min-width: 992px) {
+        .lognam {
+            font-family: 'Italiana', serif;
+            color: #FB5758;
+            position: relative;
+            font-size: 9vw;
+            top: 9vh;
+        }
+
+        .you-care {
+            font-family: 'Montserrat', sans-serif;
+            color: #FB5758;
+            position: relative;
+            top: 4vh;
+            text-align: initial;
+            padding-left: 45%;
+            font-size: 1.7vw;
+        }
+
+        .together {
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            top: 12vh;
+            font-size: 1.7vw;
+        }
+    }
+
+    @media only screen and (max-width: 992px) and (min-width: 576px) {
+        .main-left {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .lognam {
+            font-family: 'Italiana', serif;
+            color: #FB5758;
+            position: relative;
+            font-size: 15vw;
+            top: 5vh;
+        }
+
+        .you-care {
+            font-family: 'Montserrat', sans-serif;
+            color: #FB5758;
+            position: relative;
+            top: 0vh;
+            text-align: initial;
+            padding-left: 47%;
+            font-size: 2.9vw;
+        }
+
+        .together {
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            top: 5vh;
+            font-size: 2.5vw;
+        }
+
+        .sign {
+            position: relative;
+            top: 15vh;
+            height: auto;
+        }
+
+        .about-contact {
+            position: relative;
+            top: 20vh;
+            font-family: 'Lobster', cursive;
+            font-size: 2.5vw;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        .main-left {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .lognam {
+            font-family: 'Italiana', serif;
+            color: #FB5758;
+            position: relative;
+            font-size: 20vw;
+            top: 5vh;
+        }
+
+        .you-care {
+            font-family: 'Montserrat', sans-serif;
+            color: #FB5758;
+            position: relative;
+            top: 1.9vh;
+            text-align: initial;
+            padding-left: 45%;
+            font-size: 3.8vw;
+        }
+
+        .together {
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            top: 5vh;
+            font-size: 3.5vw;
+        }
+
+        .sign {
+            position: relative;
+            top: 13vh;
+            height: auto;
+        }
+
+        .about-contact {
+            position: relative;
+            top: 20vh;
+            font-family: 'Lobster', cursive;
+            font-size: 4.5vw;
+        }
     }
